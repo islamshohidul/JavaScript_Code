@@ -175,6 +175,54 @@ str = "please visit myFunction"
 var n = str.replace("visit","click");
 document.write(n+"<br>");
 
+//number
+var x=10;
+var y=20;
+document.write("The result is:"+ x+y +"<br>");
+
+var myNumber =2;
+var txt ="";
+while(myNumber !=Infinity){
+	myNumber=myNumber*myNumber;
+	txt +=myNumber;
+}
+
+document.write(txt+"<br>");
+
+
+//hexadecimal
+var x = 0xFF;
+document.write(x+"<br>");
+
+//Number convert 
+var myNumber = 32;
+document.write(myNumber.toString(32)+"<br>");
+
+// Looping array Elements
+var fruits, text, fLen,i;
+fruits =["Banana","Orange","Apple","Mango"];
+fLen=fruits.length;
+text = "<ul>"
+for (i = 0; i<fLen;i++ ) {
+	text +="<li>"+fruits[i]+"<li>";
+
+}	
+text += "</ul>";
+document.write(text+"<br>");
+
+//Adding Elements in array
+var fruits =["Banana","Orange","Apple","Mango"];
+fruits.push("Lemon");
+document.write(fruits+"<br>");
+
+//Associative arrays
+var person =[];
+person[0]="Jhon";
+person[1]="Dpe";
+person[2] =46;
+var x = person.length;
+var y= person[0];
+document.write(y+x+"<br>");
 
 </script>
 <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
