@@ -104,6 +104,29 @@ var person={
 document.write(person.fullName()+"<br>");
 
 
+//Scope in JavaScript
+//Local variable: They can only be accessed within the function
+function carFunction(){
+	var carName="volvo";
+}
+document.write("The outside carName name is "+ typeof carName+"<br>");
+
+//GLOBAL variable can be used in anywhere on a webpage
+
+var carName="volvo";
+myFunction();
+
+function myFunction(){
+	document.write("I can display "+carName+"<br>");
+}
+
+//Automatically global
+function myFucntionAuto(){
+	carName="Jeep";
+}
+myFucntionAuto();
+document.write(carName+"<br>");
+
 </script>
 
 </body>
