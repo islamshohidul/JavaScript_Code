@@ -80,8 +80,28 @@ document.write(car.type+"<br>");
 
 //The name:values pairs in JavaScript Objects are calle properties
 //Acess Object properties in two ways by . and objectname["properties name"]
+document.write(car.color+"<br>");
 document.write(car["model"] +"<br>");
 
+
+
+//---------JavaScript Method------
+//Methods are actions that can be perforemed on objects.
+//Methods are stored in properties as fucntion difinition.
+//An object method is a fucntion  definition, stored as a property value.
+
+var person={
+	firstname:"jhon",
+	lastname:"Doe",
+	id :"5566",
+
+	fullName : function(){
+
+		return this.firstname +" "+this.lastname;
+	}
+};
+
+document.write(person.fullName()+"<br>");
 
 
 </script>
