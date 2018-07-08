@@ -129,6 +129,51 @@ document.write(carName+"<br>");
 
 //String 
 var answer ="It's alright";
+var sln=answer.length;
+document.write(answer+"<br>");
+document.write(sln+"<br>");
+
+var x="we are the so-called \"Vikings\" from the north.";
+document.write(x+"<br>");
+
+
+//String as an object 
+var x="Jhon";
+var y= new String("Jhon");
+document.write(x+"<br>");
+document.write(y+"<br>");
+document.write(typeof x+"<br>");
+document.write(typeof y+"<br>");
+
+//String Methods and properties
+var txt = "Automatically version";
+var sl = txt.length;
+document.write(sl+"<br>");
+
+//indexof()
+var pos = txt.indexOf("al");
+document.write(pos+"<br>");
+document.write(txt.lastIndexOf("l")+"<br>");
+
+document.write(txt.indexOf("sd",6)+"<br>");
+
+//slice() extract a part of a string and returns the rexracted part
+var str = "Apple, Banana, Kiwi";
+var res =str.slice(7,13);
+document.write(res+"<br>");
+var res1 =str.slice(-12,-6);
+document.write(res1+"<br>");
+
+//substring() is similar like silce(),but it can't take negative indexes
+var res2= str.substring(7,13);
+document.write(res2+"<br>");
+//substr is the method which take start and leght size of a string
+document.write(str.substr(7,6)+"<br>");
+
+//replace() method 
+str = "please visit myFunction"
+var n = str.replace("visit","click");
+document.write(n+"<br>");
 
 
 </script>
