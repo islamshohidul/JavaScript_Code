@@ -46,6 +46,21 @@ var person2 ={
 };
 document.write(person1.fullname.call(person2)+"<br>");
 
+
+//constructor in JvaScripts
+
+function person3 (first,last,age,eye){
+	this.firstname=first;
+	this.lastname=last;
+	this.age =age;
+	this.eye = eye;
+
+}
+
+var myfather =new person3("Jhon","doe",50,"blue");
+
+document.write("My father age is"+myfather.age +"<br>");
+
 </script>
 	
 
