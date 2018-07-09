@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript2</title>
+</head>
+<body>
+
+
+<script >
+	
+	var cars =['BMW','VOLVO','SAAB','FORD'];
+	var i=0;
+	var text ="";
+	while(cars[i]){
+		text += cars[i]+"<br>";
+		i++;
+
+	}
+
+	document.write(text+"<br>");
+
+
+	// The javaScript this keyword
+	var person ={
+		firstname:"Jhon",
+		lastname :"doe",
+		id: 5566,
+		fullname:function(){
+			return this.firstname+" "+this.lastname;
+
+		}
+	};
+
+	document.write(person.fullname()+"<br>");
+
+//call method
+var person1={
+	fullname: function(){
+		return this.firstname +" "+this.lastname;
+	}
+};
+
+var person2 ={
+	firstname:"jhon",
+	lastname:"doe"
+};
+document.write(person1.fullname.call(person2)+"<br>");
+
+</script>
+	
+
+</body>
+</html>
