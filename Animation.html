@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first JavaScript Animation program</title>
+</head>
+<style>
+	#container{
+		height: 400px;
+		width: 400px;
+		background: yellow;
+		position: relative;
+	}
+	#animation{
+		height: 40px;
+		width: 40px;
+		background: red;
+		position: absolute;
+
+	}
+
+</style>
+
+<body>
+	<button type="button" onclick="myFunction()">Click it</button>
+	<div id="container">
+		<div id="animation"></div>
+		
+	</div>
+
+	<script>
+		function myFunction(){
+			var elem = document.getElementById("animation");
+			var pos =0;
+			var id =setInterval(move,5);
+
+			function move(){
+				if(pos==360){
+					clearInterval(id);
+
+				} else{
+					pos++;
+					elem.style.top=pos+'px';
+					elem.style.left =pos + 'px'; 
+				}
+
+			}
+	}
+	</script>
+
+</body>
+</html>
