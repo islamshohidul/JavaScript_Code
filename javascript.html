@@ -260,7 +260,81 @@ function myFunction5(total,value,index,array){
 document.write(sum+"<br>");
 
 
+//Random integer
+document.write(Math.floor(Math.random()*10)+"<br>");
+
+//A proper random function 
+function getRand(min ,max){
+	return Math.floor(Math.random()*(max-min)+min)
+
+}
+
+document.write(getRand(1,13)+"<br>");
+
+
+//Tanery condition
+function myFunction(){
+	var age,voteable;
+	age =document.getElementById("age").value;
+	voteable =(age<18) ? "Too young":"Old enough";
+	document.getElementById("demo").innerHTML=voteable+"to vote";
+}
+
+var day;
+switch (new Date().getDay()){
+
+	case 0:
+
+		day = "Sunday";
+		break;
+	case 1:
+		day = "Monday";
+		break;
+
+	case 2:
+		day="Tuesday";
+		break;
+	case 3:
+		day="Wednesday";
+		break;
+	case 4:
+		day="Thursday";
+		break;
+
+	case 5:
+		day="Friday";
+		break;
+	case 6:
+		day="Saturday";
+		
+
+}
+document.write("Today is"+day+"<br>");
+
+var i;
+var cars =[1,3,4,2,5];
+var txt4="";
+for(i=0;i<cars.length;i++){
+	txt4 += cars[i]+"<br>";
+}
+document.write(txt4+"<br>");
+
+var i;
+var Number ="";
+while(i<10){
+	Number1 +="The number is"+i+"<br>";
+	i++; 
+}
+document.write(Number1+"<br>");
+
+
 </script>
+<p id="dat"></p>
+<p>Input your age and click the button:</p>
+<input id="age" value="18">
+
+<button onclick="myFunction()">Try it</button>
+
 <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
 
 <button onclick="this.innerHTML=Date()">The time is?</button>
